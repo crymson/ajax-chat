@@ -136,16 +136,16 @@ include($phpbb_root_path . 'shout.' . $phpEx);
 		</open>
 		<open src="includes/functions.php">
 			<edit>
-				<find><![CDATA['U_ACP' => ($auth->acl_get('a_') && !empty($user->data['is_registered'])) ? append_sid("{$phpbb_root_path}adm/index.$phpEx", false, true, $user->session_id) : '')]]></find>
-				<action type="before-add"><![CDATA[		'U_MCP'         => ($auth->acl_get('m_') || $auth->acl_getf_global('m_')) ? append_sid("{$phpbb_root_path}mcp.$phpEx", 'i=main&amp;mode=front', true, $user->session_id) : '',]]></action>
-			</edit>
-			<edit>
 				<find><![CDATA['U_RESTORE_PERMISSIONS'	=> ($user->data['user_perm_from'] && $auth->acl_get('a_switchperm')) ? append_sid("{$phpbb_root_path}ucp.$phpEx", 'mode=restore_perm') : '',]]></find>
 				<action type="after-add"><![CDATA[		//-- mod : AJAX Chat ----------------------------------------------------
 		//-- add
 		'U_CHAT'                    => append_sid("{$phpbb_root_path}chat.$phpEx"),
 		'S_SHOUT'					=> true,
 		//-- fin mod : AJAX Chat ------------------------------------------------]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA['U_ACP' => ($auth->acl_get('a_') && !empty($user->data['is_registered'])) ? append_sid("{$phpbb_root_path}adm/index.$phpEx", false, true, $user->session_id) : '')]]></find>
+				<action type="before-add"><![CDATA[		'U_MCP'         => ($auth->acl_get('m_') || $auth->acl_getf_global('m_')) ? append_sid("{$phpbb_root_path}mcp.$phpEx", 'i=main&amp;mode=front', true, $user->session_id) : '',]]></action>
 			</edit>
 		</open>
 		<open src="language/en/common.php">
