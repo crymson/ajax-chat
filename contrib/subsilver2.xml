@@ -103,7 +103,6 @@ You can find support for this and other mods at http://startrekguide.com/forum]]
 		<copy>
 			<file from="root/styles/subsilver2/imageset/*.*" to="styles/subsilver2/imageset/*.*" />
 			<file from="root/styles/subsilver2/template/*.*" to="styles/subsilver2/template/*.*" />
-			<file from="root/styles/subsilver2/theme/*.*" to="styles/subsilver2/theme/*.*" />			
 		</copy>
 		<open src="styles/subsilver2/template/overall_header.html">
 			<edit>
