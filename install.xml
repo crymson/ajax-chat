@@ -11,8 +11,8 @@
 		<description lang="en-GB">This Mod Adds AJAX Chat/Shoutbox to your forum.
 Users can chat without ever needing to reload the page.</description>
 		
-		<author-notes lang="en-GB"><![CDATA[Copyright 2006-2007 Handyman, StarTrekGuide Group.
-You can find support for this and other mods at http://startrekguide.com/forum]]></author-notes>
+		<author-notes lang="en-GB"><![CDATA[Copyright 2006-2007 Handyman, StarTrekGuide Group
+			Copyright 2013 Dylan Baker. This is a custom, unsupported version]]></author-notes>
 
 		<author-group>
 			<author>
@@ -24,9 +24,18 @@ You can find support for this and other mods at http://startrekguide.com/forum]]
       		  <contributions status="past" from="2006-01-01" position="Developer"/>
       		</contributions-group>
 			</author>			
+			<author>
+				<realname>Crymson</realname>
+				<username>Dylan Baker</username>
+				<email>crymsonpheonix@gmail.com</email>
+				<homepage></homepage>
+      		<contributions-group>
+      		  <contributions status="current" from="2013-10-19" position="Maintainer"/>
+      		</contributions-group>
+			</author>			
 		</author-group>
 
-		<mod-version>2.0.0.B8</mod-version>
+		<mod-version>2.0.1</mod-version>
 
 		<installation>
 			<level>easy</level>
